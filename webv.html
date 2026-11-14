@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<style>
+
+    #con1 {
+        width: 2000px;
+        height: 2000px;
+        background-color: white;
+        margin: auto;
+    }
+
+    .top {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        padding: 10px 20px;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 25px;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .shop {
+        font-size: larger;
+        margin-right: 50px;
+    }
+
+    .sell {
+        font-size: small;
+        font-family: cursive;
+    }
+
+    .reg {
+        font-family: serif;
+        font-size: small;
+    }
+
+    .search {
+        width: 500px;
+        height: 40px;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .search span {
+        margin-left: 10px;
+    }
+
+    .fa-circle-xmark {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .ce {
+        color: blue;
+    }
+
+    .fa-square-caret-down {
+        border-right: 200px;
+    }
+
+    .signin {
+        width: 70px;
+        height: 40px;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+        color: blue;
+    }
+
+    .mycart {
+        width: 90px;
+        height: 40px;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+        color: blue;
+    }
+
+    .profile {
+        float: right;
+        color: white;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+
+    .img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .home {
+        color: white;
+        margin: 10px 12px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home i {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .home span {
+        font-size: 14px;
+        color: black;
+    }
+
+
+    /* MAIN TWO COLUMNS */
+
+    #container {
+        width: 1800px;
+        height: 1000px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    #left {
+        width: 400px;
+        height: 1300px;
+        background-color:white ;
+        flex-shrink: 0;
+    }
+
+    #right {
+        width: 1370px;
+        height: 1300px;
+        background-color: hotpink;
+        flex-shrink: 0;
+    }
+
+
+    .dept {
+        width: 320px;
+        height: 40px;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .more {
+        width: 50px;
+        height: 30px;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .more1 {
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* NETWORK AND STORAGE */
+
+    .netw {
+        width: 250px;
+        height: auto;
+        border: 1px solid black;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .network-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .network-title > i {
+        margin-right: 15px;
+    }
+
+    .checkrow {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 15px;
+        margin-bottom: 8px;
+    }
+
+    .seeall {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+    
+
+#right {
+    width: 1370px;
+    height: 900px;
+    background-color: white;
+    flex-shrink: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TOP FILTER
+========================================= */
+
+.right-top {
+    width: 100%;
+    height: 55px;
+
+    border: 1px solid #e0e4ea;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 12px;
+}
+
+
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+
+.filter-buttons button {
+    height: 35px;
+
+    background-color: white;
+
+    border: 1px solid #cfd5dc;
+    border-radius: 4px;
+
+    padding: 0 14px;
+
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+.filter-buttons button b {
+    color: #333;
+    margin-left: 7px;
+}
+
+
+.right-view {
+    display: flex;
+    gap: 8px;
+}
+
+
+.right-view button {
+    height: 35px;
+
+    background-color: white;
+
+    border: none;
+
+    padding: 0 12px;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+.right-view .auction {
+    background-color: #edf5ff;
+    color: #3c82c8;
+}
+
+
+.right-view .grid-active {
+    width: 45px;
+
+    background-color: #eaf3ff;
+
+    border: 1px solid #c9dff6;
+
+    color: #3983cf;
+}
+
+
+
+.related {
+    width: 100%;
+
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding-left: 10px;
+}
+
+
+.related b {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+
+.related span {
+    background-color: #f0f1f3;
+
+    color: #6d7177;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    
+}
+
+
+
+
+.product-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 20px;
+
+    row-gap: 25px;
+}
+
+
+
+
+.product-card {
+    min-width: 0;
+
+    padding: 8px;
+
+    background-color: white;
+
+    border-radius: 7px;
+
+    transition: 0.2s;
+}
+
+
+.product-card:hover {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+
+
+.product-card.selected {
+    border: 1px solid #cbd9e9;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+
+
+.product-image {
+    width: 100%;
+
+    height: 155px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    background-color: white;
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+
+
+.product-title {
+    height: 58px;
+
+    font-size: 13px;
+
+    line-height: 18px;
+
+    color: #333;
+
+    overflow: hidden;
+}
+
+
+
+.product-price {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #252525;
+
+    margin-top: 8px;
+}
+
+
+
+.product-info {
+    height: 38px;
+
+    margin-top: 7px;
+
+    font-size: 11px;
+
+    line-height: 16px;
+
+    color: #999;
+}
+
+
+.product-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 8px;
+}
+
+
+
+
+.rating {
+    color: #f59a18;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+.rating span {
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 0;
+
+    margin-left: 3px;
+}
+
+
+.watch {
+    background-color: white;
+
+    border: 1px solid #b9d4ed;
+
+    border-radius: 4px;
+
+    color: #4384c2;
+
+    font-size: 11px;
+
+    padding: 6px 10px;
+
+    cursor: pointer;
+}
+
+
+.watch:hover {
+    background-color: #edf6ff;
+}
+
+
+</style>
+
+
+<body>
+
+<div id="con1">
+
+    <div class="top">
+
+        <i class="fa-solid fa-s"
+           style="color: rgb(255, 212, 59);"></i>
+
+        <div class="shop">Shopka</div>
+
+        <div class="sell">Sell on Shopka</div>
+
+        <div class="reg">Register</div>
+
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass"
+               style="color: blue"></i>
+
+            <span>Useless items on wite background</span>
+
+            <i class="fa-solid fa-circle-xmark"
+               style="color:black;"></i>
+
+        </div>
+
+        <div class="ce">Consumer Electronics</div>
+
+        <i class="fa-solid fa-square-caret-down"
+           style="color: black"></i>
+
+        <div class="signin">Sign in</div>
+
+        <div class="mycart">
+
+            <i class="fa-solid fa-cart-shopping"
+               style="color: blue"></i>
+
+            <span>My cart</span>
+
+        </div>
+
+        <div class="profile">
+
+            <img class="img" src="dd.jpg">
+
+        </div>
+
+    </div>
+
+
+    <div class="navigation">
+
+        <div class="home">
+           <i class="fa-solid fa-bag-shopping" style="color: rgb(255, 212, 59);"></i>
+
+            <span>clothing & shoes</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-circle-play" style="color: rgb(255, 212, 59);"></i>
+            <span>entertainment</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-music" style="color: rgb(255, 212, 59);"></i>
+            <span>music</span>
+        </div>
+
+        <div class="home">
+          <i class="fa-solid fa-futbol" style="color: rgb(255, 212, 59);"></i>
+            <span>sport&lifestyle</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-paw" style="color: rgb(255, 212, 59);"></i>
+            <span>pets</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-kitchen-set" style="color: rgb(255, 212, 59);"></i>
+            <span>kitchen accesories</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-suitcase-rolling" style="color: rgb(255, 212, 59);"></i>
+            <span>travel equipment</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-house" style="color: rgb(255, 212, 59);"></i>
+            <span>growing &garden</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-house" style="color: rgb(255, 212, 59);"></i>
+            <span>electrical tools</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-house" style="color: rgb(255, 212, 59);"></i>
+            <span>mother care</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-house" style="color: rgb(255, 212, 59);"></i>
+            <span>top & entertainment</span>
+        </div>
+
+        <div class="home">
+            <i class="fa-solid fa-house" style="color: rgb(255, 212, 59);"></i>
+            <span>vintage</span>
+        </div>
+
+    </div>
+
+
+    <!-- MAIN CONTAINER -->
+
+    <div id="container">
+
+
+        <!-- LEFT COLUMN -->
+
+        <div id="left">
+
+            <div class="dept">
+
+                <i class="fa-solid fa-arrow-down-wide-short"
+                   style="color: blue"></i>
+
+                <span>Department</span>
+
+            </div>
+
+
+            <div class="cate">
+
+                <i class="fa-solid fa-chevron-right"
+                   style="color: rgb(255, 212, 59);"></i>
+
+                <span>All categories</span>
+
+                <br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>Ecommeerce patterns</span>
+
+            </div>
+
+
+            <div class="electronic">
+
+                <i class="fa-solid fa-angle-down"
+                   style="color: rgb(255, 212, 59);"></i>
+
+                <span>Department</span>
+
+            </div>
+
+            <br>
+
+
+            <div class="electronic">
+
+                <i class="fa-solid fa-angle-down"
+                   style="color: rgb(255, 212, 59);"></i>
+
+                <span>Cell Phones & Smartphones</span>
+
+                <ul>
+
+                    <li>Cell Phonee accesories</li>
+
+                    <li>Cell Phone Gatgets</li>
+
+                    <li>Applications</li>
+
+                    <li>Smart Watches</li>
+
+                    <div class="more1">
+
+                        <i class="fa-solid fa-square-caret-down"
+                           style="color: black"></i>
+
+                        <span>more</span>
+
+                    </div>
+
+                </ul>
+
+
+                <div class="cate">
+
+                    <i class="fa-solid fa-chevron-right"
+                       style="color: rgb(255, 212, 59);"></i>
+
+                    <span>Business and Industrial</span>
+
+                </div>
+
+
+                <div class="cate">
+
+                    <i class="fa-solid fa-chevron-right"
+                       style="color: rgb(255, 212, 59);"></i>
+
+                    <span>Computers</span>
+
+                    <br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Tablets & Networing</span>
+
+                </div>
+
+
+                <div class="cate">
+
+                    <i class="fa-solid fa-chevron-right"
+                       style="color: rgb(255, 212, 59);"></i>
+
+                    <span>Consumer Electronics</span>
+
+                </div>
+
+
+                <div class="cate">
+
+                    <i class="fa-solid fa-chevron-right"
+                       style="color: rgb(255, 212, 59);"></i>
+
+                    <span>Home & gardening</span>
+
+                </div>
+
+
+                <div class="cate">
+
+                    <i class="fa-solid fa-chevron-right"
+                       style="color: rgb(255, 212, 59);"></i>
+
+                    <span>Collectibles</span>
+
+
+                    <div class="more1">
+
+                        <i class="fa-solid fa-square-caret-down"
+                           style="color: black"></i>
+
+                        <span>Show more</span>
+
+                    </div>
+
+
+                    <!-- NETWORK -->
+
+                    <div class="netw">
+
+                        <div class="network-title">
+
+                            <div>
+
+                                <i class="fa-solid fa-chevron-right"
+                                   style="color: rgb(255, 212, 59);"></i>
+
+                                <span>Network</span>
+
+                            </div>
+
+                            <i class="fa-solid fa-angle-up"
+                               style="color: rgb(255, 212, 59);"></i>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>Routers</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>Network Cables</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>Switches</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>Network Adapters</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>Modems</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>Access Points</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>Network Tools</span>
+
+                        </div>
+
+
+                        <div class="seeall">
+
+                            <span>See All</span>
+
+                            <i class="fa-solid fa-angle-down"
+                               style="color: rgb(255, 212, 59);"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STORAGE CAPACITY -->
+
+                    <div class="netw">
+
+                        <div class="network-title">
+
+                            <div>
+
+                                <i class="fa-solid fa-chevron-right"
+                                   style="color: rgb(255, 212, 59);"></i>
+
+                                <span>Storage capacity</span>
+
+                            </div>
+
+                            <i class="fa-solid fa-angle-up"
+                               style="color: rgb(255, 212, 59);"></i>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>64 GB</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>256 GB</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>128 GB</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>32 GB</span>
+
+                        </div>
+
+
+                        <div class="checkrow">
+
+                            <input type="checkbox">
+
+                            <span>16 GB</span>
+
+                        </div>
+
+
+                        <div class="seeall">
+
+                            <span>See All</span>
+
+                            <i class="fa-solid fa-angle-down"
+                               style="color: rgb(255, 212, 59);"></i>
+
+                        </div>
+                    </div>
+
+                        <div class="netw">
+
+    <div class="network-title">
+
+        <div>
+            <i class="fa-solid fa-chevron-right"
+               style="color: rgb(255, 212, 59);"></i>
+
+            <span>Network</span>
+        </div>
+
+        <i class="fa-solid fa-angle-up"
+           style="color: rgb(255, 212, 59);"></i>
+
+    </div>
+
+      <div class="checkrow">
+        <input type="checkbox">
+        <span>Apple iPhone X 5,217</span>
+    </div>
+
+    <div class="checkrow">
+        <input type="checkbox">
+        <span>Apple iPhone  2,1686</span>
+    </div>
+
+    
+      <div class="checkrow">
+        <input type="checkbox">
+        <span>Apple iPhone XS Max</span>
+    </div>
+
+
+    
+      <div class="checkrow">
+        <input type="checkbox">
+        <span>Applee iPhone 7</span>
+    </div>
+
+    
+    <div class="checkrow">
+        <input type="checkbox">
+        <span>Applee iPhone 5</span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT COLUMN -->
+
+
+            <div id="right">
+
+    <!-- TOP FILTER BAR -->
+    <div class="right-top">
+
+        <div class="filter-buttons">
+            <button>SORT BY <b>Useless first</b> ▾</button>
+            <button>Condition ▾</button>
+            <button>Delivery options ▾</button>
+        </div>
+
+        <div class="right-view">
+            <button>Show all</button>
+            <button class="auction">Auction</button>
+            <button>Buy now</button>
+            <button>
+                <i class="fa-solid fa-list"></i>
+            </button>
+            <button class="grid-active">
+                <i class="fa-solid fa-grip"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- RELATED -->
+    <div class="related">
+
+        <b>Related</b>
+
+        <span>worldwide shipping</span>
+        <span>under $50</span>
+        <span>kitten</span>
+        <span>pucker shoes</span>
+        <span>vintage typewriter</span>
+
+    </div>
+
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid">
+
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="typewriter.jpg" alt="Typewriter">
+            </div>
+
+            <div class="product-title">
+                Vintage Typewriter to post awesome stories about UI design and web development.
+            </div>
+
+            <div class="product-price">$49.50</div>
+
+            <div class="product-info">
+                Eligible for Shipping To Mars or somewhere else
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.05</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="shoes.jpg" alt="Leather shoes">
+            </div>
+
+            <div class="product-title">
+                Lee Pucker design. Leather botinki for handsome designers. Free shipping.
+            </div>
+
+            <div class="product-price">$13.95</div>
+
+            <div class="product-info">
+                1258 bids, 359 watchers<br>
+                $5.95 for shipping
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.56</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="kitten.jpg" alt="Kitten">
+            </div>
+
+            <div class="product-title">
+                Timesaving kitten to save months on development. Playful, cute, cheap!
+            </div>
+
+            <div class="product-price">$128.99</div>
+
+            <div class="product-info">
+                Eligible for nothing :(
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.87</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="plastic.jpg" alt="Plastic plugs">
+            </div>
+
+            <div class="product-title">
+                Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!
+            </div>
+
+            <div class="product-price">$12.48</div>
+
+            <div class="product-info">
+                Worldwide shipping available<br>
+                Buyers protection possible!
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.99</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="drink.jpg" alt="Drink">
+            </div>
+
+            <div class="product-title">
+                Creativity stimulating lotion. Drink every morning to generate better ideas!
+            </div>
+
+            <div class="product-price">$12.48</div>
+
+            <div class="product-info">
+                Worldwide shipping available<br>
+                Buyers protection possible!
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.99</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+        <div class="product-card selected">
+
+            <div class="product-image">
+                <img src="prototype.jpg" alt="Prototyping">
+            </div>
+
+            <div class="product-title">
+                Prototyping items to create a lot of useless things...
+            </div>
+
+            <div class="product-price">$128.99</div>
+
+            <div class="product-info">
+                Showcasing onHovered state
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.87</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 7 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="shorts.jpg" alt="Shorts">
+            </div>
+
+            <div class="product-title">
+                John Von Ebalkin SPRING 1954 collection. Nice and slim fit trousers.
+            </div>
+
+            <div class="product-price">$13.95</div>
+
+            <div class="product-info">
+                1258 bids, 359 watchers<br>
+                $5.95 for shipping
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.56</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 8 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="envelope.jpg" alt="Envelope">
+            </div>
+
+            <div class="product-title">
+                Envelope, Stripes, Pencil and etc. Purchase this kit today and feel yourself OKAY
+            </div>
+
+            <div class="product-price">$9.50</div>
+
+            <div class="product-info">
+                Eligible for Shipping To Mars or somewhere else
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.77</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 9 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images (4).png" alt="Teapot">
+            </div>
+
+            <div class="product-title">
+                Professional teadrinking set for every designer and developer
+            </div>
+
+            <div class="product-price">$128.99</div>
+
+            <div class="product-info">
+                Eligible for nothing :(
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.87</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 10 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images (3).jpg" alt="Bonsai">
+            </div>
+
+            <div class="product-title">
+                One string Bonsai description
+            </div>
+
+            <div class="product-price">$11.68</div>
+
+            <div class="product-info">
+                Worldwide shipping available<br>
+                Buyers protection possible!
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.99</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 11 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images (2).jpg" alt="Nail polish">
+            </div>
+
+            <div class="product-title">
+                Simply best item in town to shine bright with your Nine Inch Nails
+            </div>
+
+            <div class="product-price">$1.25</div>
+
+            <div class="product-info">
+                Eligible for Shipping To Mars or somewhere else
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.77</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 12 -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images (1).png" alt="Makeup brushes">
+            </div>
+
+            <div class="product-title">
+                KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!
+            </div>
+
+            <div class="product-price">$23.25</div>
+
+            <div class="product-info">
+                1258 bids, 359 watchers<br>
+                $5.95 for shipping
+            </div>
+
+            <div class="product-bottom">
+
+                <div class="rating">
+                    ★★★★★ <span>4.56</span>
+                </div>
+
+                <button class="watch">
+                    ♡ Watch
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+        
+          
+        
+            
+
+        
+
+            
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
